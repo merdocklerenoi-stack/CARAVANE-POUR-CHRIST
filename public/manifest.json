@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "CARAVANE POUR CHRIST",
+  "short_name": "Caravane",
+  "description": "Méditations bibliques quotidiennes '365 jours avec Dieu'. Un jour à la fois, plus près de Christ.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0E2044",
+  "background_color": "#070E1E",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["lifestyle", "education", "books"]
+}

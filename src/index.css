@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --logo-globe-blue: #1E56B7;
+    --logo-globe-deep: #0D2B6B;
+    --logo-red: #D62828;
+    --logo-cyan: #38BDF8;
+    --logo-gold: #F59E0B;
+  }
+
+  html {
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  /* Amélioration de la césure et de l'équilibre des phrases sur mobile */
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  p, li, blockquote {
+    text-wrap: pretty;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.font-sans-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-feature-settings: "kern" 1;
+}
+
+/* Fluid reading typography */
+.prose-reading {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Safe area utilities for modern mobile edge-to-edge screens */
+.safe-pb {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+.safe-mb {
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+/* Custom scrollbar matching logo globe blue & banner red */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 86, 183, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(214, 40, 40, 0.6);
+}
+

@@ -1,0 +1,10 @@
+{
+  "name": "CARAVANE POUR CHRIST",
+  "description": "Application chrétienne de méditations quotidiennes '365 jours avec Dieu'. Un jour à la fois, plus près de Christ.",
+  "requestFramePermissions": [
+    "notifications"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
